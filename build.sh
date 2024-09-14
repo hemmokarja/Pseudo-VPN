@@ -62,7 +62,7 @@ echo "$REGION" > "$REGION_FILE_PATH"
 if [ -f "$PRIVATE_KEY_PATH" ]; then
   echo "SSH key already exists at $PRIVATE_KEY_PATH. Skipping key generation."
 else
-  echo "Generating SSH key pair '$KEY_NAME' to '$KEY_DIR'"
+  echo "Generating SSH key pair '$KEY_NAME' to '$KEY_DIR/'"
   ssh-keygen -t rsa -b 4096 -f "$PRIVATE_KEY_PATH" -C "$KEY_NAME" -N "" > /dev/null 2>&1
 fi
 
