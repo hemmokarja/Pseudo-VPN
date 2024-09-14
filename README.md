@@ -32,7 +32,7 @@ Make sure you've configured Firefox as described above.
 
 ### Build Resources
 
-- Run `build.sh` to create the necessary resources on AWS.
+- Run `build.sh` to create the necessary resources on AWS. This script also generates the SSH keys required for connecting to the EC2 instance. The keys will be saved to `./.config/.ssh/`.
 
 ### Browse the Internet
 
@@ -53,7 +53,7 @@ Running the remote server incurs a marginal cost, which varies based on the regi
 - **Infrastructure**: The project uses Terraform to manage AWS resources. It deploys an EC2 instance (`t3.micro`) in your chosen AWS region.
 - **SSH Tunnel**: Traffic from your local port `8080` is routed through the EC2 instance using SSH tunneling with a SOCKS proxy.
 - **Scripts**:
-  - `build.sh`: Initializes the AWS resources.
+  - `build.sh`: Initializes the AWS resources and generates the SSH keys needed for connection.
   - `tunnel.sh`: Opens the SSH tunnel.
   - `destroy.sh`: Cleans up the resources after use.
 
