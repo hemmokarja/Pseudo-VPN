@@ -32,7 +32,7 @@ Make sure you've configured Firefox as described above.
 
 ### Build Resources
 
-- Run `build.sh` to create the necessary resources on AWS. This script also generates the SSH keys required for connecting to the EC2 instance. The keys will be saved to `./.config/.ssh/`.
+- Run `build.sh` to create the necessary resources on AWS. This script also generates the SSH keys required for connecting to the EC2 instance. The keys will be saved to `.config/.ssh/` in the current directory.
 
 ### Browse the Internet
 
