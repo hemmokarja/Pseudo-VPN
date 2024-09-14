@@ -9,8 +9,8 @@ IP_FILE_PATH="$CONFIG_DIR/instance_ip"
 REGION_FILE_PATH="$CONFIG_DIR/region"
 
 
-if [ -z "$AWS_SECRET_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ]; then
-  echo "AWS_SECRET_KEY_ID and AWS_SECRET_ACCESS_KEY must be set as environment" \
+if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ]; then
+  echo "AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY must be set as environment" \
     "variables! Exiting." >&2
   exit 1
 fi
