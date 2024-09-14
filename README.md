@@ -38,7 +38,7 @@ Make sure you've configured Firefox as described above.
 ### Browse the Internet
 
 - Run `tunnel.sh` to open an SSH tunnel to your AWS instance. Keep the terminal open while you're browsing. You're ready to browse!
-- Open Firefox and go to [Geo Data Tool](https://www.geodatatool.com/) to verify your virtual location.
+- Open Firefox and go to, e.g., [IPinfo](https://ipinfo.io) to verify your virtual location.
 
 ### Closing Down
 
