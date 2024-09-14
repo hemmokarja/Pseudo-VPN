@@ -80,11 +80,11 @@ fi
 
 echo "Applying Terraform configuration (this might take a while)..."
 terraform apply \
-    -var "key_pair_name=$KEY_NAME" \
-    -var "public_key_path=$PUBLIC_KEY_PATH" \
-    -var "allowed_ip=$LOCAL_IP/32" \
-    -var "region=$REGION" \
-    -auto-approve
+  -var "key_pair_name=$KEY_NAME" \
+  -var "public_key_path=$PUBLIC_KEY_PATH" \
+  -var "allowed_ip=$LOCAL_IP/32" \
+  -var "region=$REGION" \
+  -auto-approve
 
 
 # fetch instance ip for tunneling
