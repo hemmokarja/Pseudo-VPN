@@ -50,7 +50,7 @@ Running the remote server incurs a marginal cost, which varies based on the regi
 
 ## Technical Details
 
-- **Infrastructure**: The project uses Terraform to manage AWS resources. It deploys an EC2 instance (`t3.micro`) in your chosen AWS region.
+- **Infrastructure**: The project uses Terraform to manage AWS resources. It deploys an EC2 instance in your chosen AWS region. By default, a `t3.micro` instance is used, but this can be adjusted if needed in the `variables.tf` file.
 - **SSH Tunnel**: Traffic from your local port `8080` is routed through the EC2 instance using SSH tunneling with a SOCKS proxy.
 - **Scripts**:
   - `build.sh`: Initializes the AWS resources and generates the SSH keys needed for connection.
