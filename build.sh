@@ -9,7 +9,13 @@ IP_FILE_PATH="$CONFIG_DIR/instance_ip"
 REGION_FILE_PATH="$CONFIG_DIR/region"
 
 
-# init dirs for terraform configs and ssh keys
+if [ -z "$AWS_SECRET_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ]; then
+  echo "AWS_SECRET_KEY_ID and AWS_SECRET_ACCESS_KEY must be set as environment" \
+    "variables! Exiting." >&2
+  exit 1
+fi
+
+
 if [ ! -d "$CONFIG_DIR" ]; then
   mkdir -p "$CONFIG_DIR"
 fi
