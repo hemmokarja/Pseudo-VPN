@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pseudo-VPN is a simple VPN-like tool that allows you to browse the internet as if you were in another part of the world. It lets you bypass regional restrictions and access content that may not be available in your current location. By setting up a remote server in AWS and routing your internet traffic through it using Firefox, it gives you a new virtual location.
+Pseudo-VPN is a simple VPN-like tool that allows you to browse the internet as if you were in another part of the world. It lets you bypass regional restrictions and access content that may not be available in your current location. By setting up a remote server in AWS and routing your internet traffic through it using Firefox, it gives you a new virtual location in any desired region.
 
 ## What You'll Need
 
