@@ -12,7 +12,7 @@ fi
 
 ssh-keyscan -H $INSTANCE_IP >> ~/.ssh/known_hosts 2>/dev/null
 
-echo "SSH tunnel opened!"
+echo "SSH tunnel opened, you're ready to browse!"
 ssh -i "$PRIVATE_KEY_PATH" -D 8080 -N ubuntu@"$INSTANCE_IP"
 
 echo "SSH tunnel closed."
